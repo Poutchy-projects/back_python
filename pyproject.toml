@@ -1,0 +1,28 @@
+[project]
+name = "flask_api"
+version = "1.0.0"
+description = "The basic blog app built in the Flask tutorial."
+readme = "README.md"
+dependencies = [
+    "flask",
+    "flask_restful",
+    "gunicorn",
+    "sqlalchemy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "black",
+    "flake8",
+    "isort",
+    "pylint",
+    "pytest",
+    "pytest-timeout",
+    "coverage",
+    "requests",
+]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
